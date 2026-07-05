@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  font-family: "Google Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.encabezado {
+  text-align: center;
+  background: linear-gradient(
+    118deg,
+    rgba(0, 149, 255, 1) 0%,
+    rgba(199, 234, 255, 1) 99%
+  );
+  padding: 25px;
+}
+
+section {
+  flex-grow: 1;
+}
+
+.botones {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin: 20px;
+}
+
+button {
+  padding: 10px 14px;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: "Google Sans", sans-serif;
+  transition: all 0.2s ease;
+  min-width: 200px;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+#btnExito {
+  background: rgb(1, 160, 1);
+  color: white;
+}
+
+#btnExito:hover {
+  background: rgb(0, 120, 0);
+}
+
+#btnError {
+  background: rgb(145, 0, 0);
+  color: white;
+}
+
+#btnError:hover {
+  background: rgb(105, 0, 0);
+}
+
+#btnInformacion {
+  background: rgb(0, 101, 179);
+  color: white;
+}
+
+#btnInformacion:hover {
+  background: rgb(0, 75, 135);
+}
+
+#btnAdvertencia {
+  background: rgb(245, 158, 11);
+  color: white;
+}
+
+#btnAdvertencia:hover {
+  background: rgb(202, 111, 0);
+}
+
+#notificacion {
+  color: white;
+}
+
+#toast {
+  color: #0095ff;
+}
+
+#btnPersonalizado1 {
+  background: #111827;
+  color: white;
+}
+
+#btnPersonalizado1:hover {
+  background: #1f2937;
+}
+
+#btnPersonalizado2 {
+  background: #7e22ce;
+  color: white;
+}
+
+#btnPersonalizado2:hover {
+  background: #581c87;
+}
+
+#btnPersonalizado3 {
+  background: #0284c7;
+  color: white;
+}
+
+#btnPersonalizado3:hover {
+  background: #0369a1;
+}
+
+#btnPersonalizado4 {
+  background: #dc2626;
+  color: white;
+}
+
+#btnPersonalizado4:hover {
+  background: #991b1b;
+}
+.informacion {
+  text-align: center;
+  margin: 20px;
+  line-height: 1.5;
+}
+
+
+.foot{
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px
+}

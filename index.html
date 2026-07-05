@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prueba Toast</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <section>
+      <div class="encabezado">
+        <h1>
+          <span id="notificacion">NOTIFICACIÓN</span
+          ><span id="toast">TOAST</span>
+        </h1>
+      </div>
+
+      <div class="informacion">
+        Da click en algun boton para ver la notificación, todas las
+        notificaciones pueden personalizarse estos son solo algunos ejemplos.
+      </div>
+
+      <div class="botones">
+        <button id="btnExito" onclick="pruebaToastExito()">
+          Toast de éxito
+        </button>
+        <button id="btnError" onclick="pruebaToastError()">
+          Toast de error
+        </button>
+        <button id="btnInformacion" onclick="pruebaToastInformacion()">
+          Toast de información
+        </button>
+        <button id="btnAdvertencia" onclick="pruebaToastAdvertencia()">
+          Toast de advertencia
+        </button>
+      </div>
+
+      <div class="informacion">
+        <p>Mas ejemplos de botones personalizados</p>
+      </div>
+
+      <div class="botones">
+        <button id="btnPersonalizado1" onclick="toastOscuro()">
+          Toast oscuro
+        </button>
+
+        <button id="btnPersonalizado2" onclick="toastMorado()">
+          Toast morado
+        </button>
+
+        <button id="btnPersonalizado3" onclick="toastAzul()">Toast azul</button>
+
+        <button id="btnPersonalizado4" onclick="toastRojo()">Toast rojo</button>
+      </div>
+    </section>
+
+    <footer class="foot">
+      <p>ALUMNO: GOMEZ ROBLERO ANGEL JAHIR</p>
+      <p>DOCENTE: MARTINEZ NIETO ADELINA</p>
+      <p>MATERIA: PROGRAMACIÓN WEB</p>
+    </footer>
+
+    <script src="js/componente.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
