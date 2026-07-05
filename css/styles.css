@@ -16,6 +16,12 @@ body {
   padding: 25px;
 }
 
+h1{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 section {
   flex-grow: 1;
 }
