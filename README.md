@@ -326,9 +326,9 @@ function toastRojo() {
 
 ## GitHub Pages
 
-## Repositorio
+[Ver página en GitHub Pages](https://jahirroblero.github.io/ProgramacionWeb-Actividad3-7SB/)
 
-Repositorio público en GitHub:
+## Repositorio
 
 [Ver repositorio en GitHub](https://github.com/JahirRoblero/ProgramacionWeb-Actividad3-7SB)
 
