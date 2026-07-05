@@ -1,12 +1,10 @@
 # Actividad 3: Componente Visual con JavaScript
 
-## Portada
-
 **Instituto Tecnológico de Oaxaca**  
-**Alumno:** GOMEZ ROBLERO ANGEL JAHIR
-**Docente:** MARTINEZ NIETO ADELINA
+**Alumno:** GOMEZ ROBLERO ANGEL JAHIR  
+**Docente:** MARTINEZ NIETO ADELINA  
 **Materia:** Programación Web  
-**Hora:** 10:00-13:00
+**Hora:** 10:00-13:00  
 **Actividad:** Componente Visual con JS
 
 # Notificación Toast
