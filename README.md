@@ -73,7 +73,7 @@ Antes de cerrar la etiqueta `body`, se agrega el archivo JavaScript del componen
 <script src="js/componente.js"></script>
 ```
 
-El archivo `componente.js` contiene la lógica principal del componente Toast.
+El archivo `componente.js` contiene la lógica principal del componente Toast incluyendo sus estilos.
 
 ## Uso básico
 
