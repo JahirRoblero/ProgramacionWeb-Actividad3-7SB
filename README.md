@@ -67,7 +67,7 @@ ACTIVIDAD3-COMPONENTEVISUAL/
 
 ## Instalación
 
-Antes de cerrar la etiqueta `body`, se agregan los archivos JavaScript.
+Antes de cerrar la etiqueta `body`, se agrega el archivo JavaScript del componente.
 
 ```html
 <script src="js/componente.js"></script>
