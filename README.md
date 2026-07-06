@@ -7,8 +7,6 @@
 **Hora:** 10:00-13:00  
 **Actividad:** Componente Visual con JS
 
----
-
 # Notificación Toast
 
 ## ¿Qué es este componente?
@@ -24,15 +22,11 @@ Una notificación Toast permite mostrar mensajes como:
 
 El componente aparece en pantalla sin cambiar de página y sin interrumpir completamente la navegación del usuario.
 
----
-
 ## Problema que resuelve
 
 En muchas páginas web se necesita mostrar mensajes rápidos al usuario. Por ejemplo, cuando se guarda información, ocurre un error, se necesita mostrar una advertencia o se quiere comunicar información importante.
 
-Este componente resuelve ese problema mostrando una notificación visual reutilizable con título, mensaje, tipo, duración, posición, icono y colores personalizables.
-
----
+Este componente resuelve ese problema mostrando una notificación visual reutilizable con título, mensaje, tipo, duración, icono y colores personalizables.
 
 ## Tecnologías utilizadas
 
@@ -41,8 +35,6 @@ Este componente resuelve ese problema mostrando una notificación visual reutili
 - JavaScript
 - Iconos SVG
 - GitHub Pages
-
----
 
 ## Estructura del proyecto
 
@@ -53,7 +45,7 @@ ACTIVIDAD3-COMPONENTEVISUAL/
 ├── index.html
 │
 ├── css/
-│   └── componente.css
+│   └── styles.css
 │
 ├── js/
 │   ├── app.js
@@ -75,24 +67,13 @@ ACTIVIDAD3-COMPONENTEVISUAL/
 
 ## Instalación
 
-Para utilizar el componente en una página HTML, primero se agrega el archivo CSS dentro de la etiqueta `head`.
-
-```html
-<link rel="stylesheet" href="css/componente.css" />
-```
-
-Después, antes de cerrar la etiqueta `body`, se agregan los archivos JavaScript.
+Antes de cerrar la etiqueta `body`, se agregan los archivos JavaScript.
 
 ```html
 <script src="js/componente.js"></script>
-<script src="js/app.js"></script>
 ```
 
 El archivo `componente.js` contiene la lógica principal del componente Toast.
-
-El archivo `app.js` contiene las funciones de prueba que se ejecutan desde los botones de la página principal.
-
----
 
 ## Uso básico
 
@@ -104,11 +85,8 @@ notificacionToast(
   "Los datos se registraron sin problemas.",
   "exito",
   4000,
-  "top-right",
 );
 ```
-
----
 
 ## Parámetros del componente
 
@@ -120,7 +98,6 @@ notificacionToast(
   mensaje,
   tipo,
   duracion,
-  posicion,
   icono,
   colorDeFondo,
   colorDeTitulo,
@@ -129,20 +106,17 @@ notificacionToast(
 );
 ```
 
-| Parámetro       | Descripción                              |
-| --------------- | ---------------------------------------- |
-| `titulo`        | Título principal de la notificación      |
-| `mensaje`       | Texto que se muestra dentro del Toast    |
-| `tipo`          | Tipo de notificación                     |
-| `duracion`      | Tiempo que dura visible en milisegundos  |
-| `posicion`      | Lugar donde aparece el Toast en pantalla |
-| `icono`         | Ruta del icono o icono personalizado     |
-| `colorDeFondo`  | Color de fondo del Toast                 |
-| `colorDeTitulo` | Color del título                         |
-| `colorMensaje`  | Color del mensaje                        |
-| `colorIcono`    | Color del icono                          |
-
----
+| Parámetro       | Descripción                             |
+| --------------- | --------------------------------------- |
+| `titulo`        | Título principal de la notificación     |
+| `mensaje`       | Texto que se muestra dentro del Toast   |
+| `tipo`          | Tipo de notificación                    |
+| `duracion`      | Tiempo que dura visible en milisegundos |
+| `icono`         | Ruta del icono o icono personalizado    |
+| `colorDeFondo`  | Color de fondo del Toast                |
+| `colorDeTitulo` | Color del título                        |
+| `colorMensaje`  | Color del mensaje                       |
+| `colorIcono`    | Color del icono                         |
 
 ## Tipos de notificación
 
@@ -157,25 +131,6 @@ El componente tiene cuatro tipos principales:
 
 Cada tipo cambia el estilo visual de la notificación para que el usuario pueda identificar rápidamente el mensaje.
 
----
-
-## Posiciones disponibles
-
-El componente puede mostrarse en diferentes posiciones de la pantalla:
-
-```js
-"top-right";
-"top-left";
-"top-center";
-"bottom-right";
-"bottom-left";
-"bottom-center";
-```
-
-Esto permite reutilizar el componente en distintas partes de una página web.
-
----
-
 ## Ejemplos de uso
 
 ### Toast de éxito
@@ -187,7 +142,6 @@ function pruebaToastExito() {
     "Ejemplo de Toast de éxito.",
     "exito",
     4000,
-    "top-right",
   );
 }
 ```
@@ -196,13 +150,7 @@ function pruebaToastExito() {
 
 ```js
 function pruebaToastError() {
-  notificacionToast(
-    "Error",
-    "Ejemplo de Toast de error.",
-    "error",
-    4000,
-    "top-right",
-  );
+  notificacionToast("Error", "Ejemplo de Toast de error.", "error", 4000);
 }
 ```
 
@@ -215,7 +163,6 @@ function pruebaToastInformacion() {
     "Esta notificación muestra información general para el usuario.",
     "informacion",
     4000,
-    "top-right",
   );
 }
 ```
@@ -229,100 +176,9 @@ function pruebaToastAdvertencia() {
     "Revisa la información antes de continuar.",
     "advertencia",
     4000,
-    "top-right",
   );
 }
 ```
-
----
-
-## Ejemplos con diferentes posiciones
-
-### Toast arriba a la derecha
-
-```js
-function toastTopRight() {
-  notificacionToast(
-    "Toast superior",
-    "Esta notificación aparece arriba a la derecha.",
-    "informacion",
-    4000,
-    "top-right",
-  );
-}
-```
-
-### Toast arriba al centro
-
-```js
-function toastTopCenter() {
-  notificacionToast(
-    "Toast superior",
-    "Esta notificación aparece arriba al centro.",
-    "informacion",
-    4000,
-    "top-center",
-  );
-}
-```
-
-### Toast arriba a la izquierda
-
-```js
-function toastTopLeft() {
-  notificacionToast(
-    "Toast superior",
-    "Esta notificación aparece arriba a la izquierda.",
-    "informacion",
-    4000,
-    "top-left",
-  );
-}
-```
-
-### Toast abajo al centro
-
-```js
-function toastBottomCenter() {
-  notificacionToast(
-    "Toast inferior",
-    "Esta notificación aparece abajo al centro.",
-    "exito",
-    4000,
-    "bottom-center",
-  );
-}
-```
-
-### Toast abajo a la derecha
-
-```js
-function toastBottomRight() {
-  notificacionToast(
-    "Toast inferior",
-    "Esta notificación aparece abajo a la derecha.",
-    "exito",
-    4000,
-    "bottom-right",
-  );
-}
-```
-
-### Toast abajo a la izquierda
-
-```js
-function toastBottomLeft() {
-  notificacionToast(
-    "Toast inferior",
-    "Esta notificación aparece abajo a la izquierda.",
-    "advertencia",
-    4000,
-    "bottom-left",
-  );
-}
-```
-
----
 
 ## Ejemplos personalizados
 
@@ -337,7 +193,6 @@ function toastOscuro() {
     "Cambiamos el color de la notificación.",
     "informacion",
     4000,
-    "top-right",
     "img/informacion.svg",
     "#111827",
     "#ffffff",
@@ -356,7 +211,6 @@ function toastMorado() {
     "Ejemplo de Toast con color morado.",
     "informacion",
     4000,
-    "top-right",
     "img/informacion.svg",
     "#f3e8ff",
     "#6b21a8",
@@ -375,7 +229,6 @@ function toastAzul() {
     "Cambiamos la notificación a color azul.",
     "exito",
     4000,
-    "top-right",
     "img/flechitaDeListo.svg",
     "#e0f2fe",
     "#075985",
@@ -394,7 +247,6 @@ function toastRojo() {
     "Podemos personalizar todo el diseño.",
     "error",
     4000,
-    "top-right",
     "img/exclamacion.svg",
     "#450a0a",
     "#ffffff",
@@ -403,8 +255,6 @@ function toastRojo() {
   );
 }
 ```
-
----
 
 ## Código HTML de ejemplo
 
@@ -420,22 +270,18 @@ function toastRojo() {
 </div>
 ```
 
----
-
 ## Características del componente
 
 - Es reutilizable.
 - Se puede llamar con distintos textos.
 - Permite diferentes tipos de notificación.
-- Permite cambiar la posición del Toast.
 - Acepta iconos personalizados.
 - Permite cambiar colores.
 - Se oculta automáticamente después de cierto tiempo.
 - Genera su estructura visual desde JavaScript.
 - Genera dinámicamente sus estilos principales desde JavaScript.
 - No utiliza frameworks externos como React, Vue o Angular.
-
----
+- Puede insertarse en cualquier página HTML usando el archivo `componente.js`.
 
 ## Capturas de pantalla
 
@@ -483,4 +329,4 @@ function toastRojo() {
 
 Este componente tipo Toast permite mostrar notificaciones visuales de forma sencilla y reutilizable dentro de una página web.
 
-Su uso es práctico porque puede adaptarse a diferentes situaciones mediante parámetros como título, mensaje, tipo, duración, posición, icono y colores.
+Su uso es práctico porque puede adaptarse a diferentes situaciones mediante parámetros como título, mensaje, tipo, duración, icono y colores.
